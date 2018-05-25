@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>array</title>
+    <meta charset ="utf-8">
+  </head>
+  <body>
+    <script>
+      var scorses=[60,50,60,58,54,54,58,50,52,
+                  54,48,,69,34,55,51,52,44,46];
+      // var arrTmp=scores.sort();
+      // var i =scores.length;      
+      var max =scorses[0];
+      var sign=0;
+      for(var i=1 ; i < scorses.length;i++){
+        document.write(scorses[i]+"<br>");
+        if(scorses[i]>max){
+          max=scorses[i];
+          sign=i;
+        }
+      }
+      document.write("最大值是："+ max +"下标是："+ sign + "<br");
+    </script>
+  </body>
+</html>

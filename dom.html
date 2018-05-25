@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="voewport"content="width=device-width,initial-scale=1.0">
+    <title>DOM</title>
+  <script>
+    function init(){
+    var obj =document.getElementById("t");
+    alert(obj.innerHTML+",我其实就一字符串");
+    obj.innerHTML="改个名字";
+    // alrert(document.getElemenById("pic").getAttrobute("alt"));
+    // document.getElemenById("pic").setAttrobute("src,"2.pig);
+  }
+  function changePic(){
+    if (document.getElementById("pic").getAttribute("src")=="1.jog"){
+      setAttrobute.setAttrobute("src","2.jop");
+    }else{      
+      document.getElementById("pic").setAttribute("src","1.jog");
+    }
+  }
+  
+  window.onload=init;
+    </script>
+</head>
+<body>
+   <h1 id="t">我是一个标题</h1>
+   <img id="pic" src="1.jpg" alt="复联图片"><br>
+   <button onclick="changePic()">点我试试</button>
+</body>
+</html>

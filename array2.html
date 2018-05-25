@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>var</title>
+  </head>
+  <body>
+    <script>
+      var fiat = {
+        make: "Fiat",
+        model: "500",
+        year:  1957,
+        mileage: 2000,
+        color:"Medium Blue",
+        drive: function (){
+          alert("Zoom Zoom!!");
+        },
+        getColor: function(){
+          return this.color;
+        },
+        setColor: function(c){
+          this.color = c;
+        }
+      }
+     
+      document.write(fiat.getColor() + "<br>");
+        fiat.setColor('orange');
+        document.write(fiat.getColor() + "<br>");
+      </script>
+  </body>
+</html>
